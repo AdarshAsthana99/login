@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - Week 2</title>
+    <link rel="stylesheet" href="form.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <form action="" name="Formfill" onsubmit="return validation()">
+          <h2>Register</h2>
+          <p id="result"></p>
+          <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="Username" placeholder="Username" />
+          </div>
+          <div class="input-box">
+            <i class="fa-solid fa-envelope"></i>
+
+            <input type="email" name="Email" placeholder="Email" />
+          </div>
+          <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="Password" placeholder="Password" />
+          </div>
+          <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="cPassword"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="button">
+            <input
+              type="submit"
+              class="btn"
+              onclick="validation()"
+              value="Register"
+            />
+          </div>
+          <div class="Forget">
+            <span><a href="#">Forget Password</a></span>
+            <span><a href="#">Login</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup" id="popup">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+        <h2>Thank You !</h2>
+        <p>Register Successful .</p>
+        <a href="login.html"><button onclick="closeSlide()">OK</button></a>
+      </div>
+    </div>
+    <script src="from.js"></script>
+    <script
+      src="https://kit.fontawesome.com/661b4d18a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
